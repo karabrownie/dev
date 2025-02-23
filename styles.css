@@ -1,0 +1,228 @@
+/*TextMeOne - TMO*/
+@font-face {
+  font-family: "TMO";
+  src: url(fonts/TextMeOne-Regular.ttf) format("truetype");
+}
+
+:root{
+  --off-black: rgb(10,10,10);
+  --white: white;
+  --off-white: rgb(178, 178, 178);
+  --green1: rgb(143,188,143);
+  --green2: rgb(121, 186, 121);
+  --green3: rgb(0, 108, 0);
+}
+
+*{
+  font-family: "TMO", sans-serif;
+  color: var(--green1);
+  font-size: 18px;
+}
+
+a:hover{
+  color: var(--green2);
+}
+
+body{
+  background-color: var(--off-black);
+}
+
+header{
+  padding-top: 10px;
+}
+
+.content{
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 450px){
+  .content{
+    width: 100%;
+  }
+}
+
+.logo{
+  font-size: 36px;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+}
+
+.navlinks{
+  font-size: 22px;
+  float: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+footer{
+  text-align: center;
+}
+
+footer p{
+  font-size: 16px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.description{
+  margin: auto;
+}
+
+.devlist{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.project-link{
+  float: left;
+  padding-bottom: 6px;
+}
+
+.project-description{
+  float: right;
+  margin: 0 auto;
+  margin-right: 0;
+  padding-left: 10px;
+  padding-bottom: 6px;
+}
+
+.form-contact{
+  box-sizing: content-box;
+  max-width: fit-content;
+  margin: 0 auto;
+  border-color: var(--off-white);
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 6px;
+}
+
+.form-contact input[type=text]{
+  font-size: 20px;
+  color: var(--green3);
+}
+
+.form-contact input[type=text], select, textarea{
+  font-size: 20px;
+  color: var(--green3);
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+}
+
+.form-contact input[type=text]#fname{
+  width: 168px;
+  height: 28px;
+}
+
+.form-contact input[type=text]#lname{
+  width: 168px;
+  height: 28px;
+}
+
+@media screen and (min-width: 450px){
+  .form-contact input[type=text]#fname{
+    width: 130px;
+  }
+  .form-contact input[type=text]#lname{
+    width: 130px;
+  }
+}
+
+.form-contact input[type=text]#email{
+  width: 100%;
+  height: 28px;
+}
+
+.form-contact input[type=text]#message, textarea{
+  width: 100%;
+  height: 100px;
+  min-height: 100px;
+}
+
+@media screen and (min-width: 600px){
+  .form-contact input[type=text]#email{
+    width: 298px;
+  }
+  .form-contact input[type=text]#message, textarea {
+    width: 454px;
+  }
+}
+
+.form-item{
+  border: none;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fname{
+  border: none;
+  float: left;
+  flex: 100%;
+  margin: 0;
+}
+
+.lname{
+  border: none;
+  float: right;
+  flex: 100%;
+  margin: 0;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 600px){
+  .fname{
+    flex: 50%;
+  }
+  .lname{
+    flex: 50%;
+  }
+}
+
+.btn{
+  border: none;
+  color: var(--green3);
+  background: var(--white);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding: 4px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: var(--green2);
+  color: var(--white);
+}
+
+.btn-container{
+  text-align: center;
+}
+
+.thanks{
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/*containers*/
+.row{
+  display: flex;
+  /* padding-bottom: 5px; */
+}
+
+.column{
+  flex: 100%;
+}
+
+@media screen and (min-width: 600px){
+  .column{
+    flex: 50%;
+  }
+}
